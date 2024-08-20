@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                accent: 'rgba(255, 66, 64, 1)'
+              },
+            }
+          }
+        }
+      </script>
+
+</head>
+
+<body>
+    <!-- header section  -->
+     <header class="container mx-auto">
+        <!-- nav bar part  -->
+        <nav>
+            <div class=" navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost tracking-tighter font-bold text-3xl">Hockey<span class="text-accent font-extrabold text-2xl ">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-search fa-solid pr-4 hidden md:block"></i>
+                  <a class="btn bg-accent text-white">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <!-- banner part  -->
+         <div class="mt-10">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img
+                    src="./Images/1.png"
+                    class="w-full" />
+                  <div class="absolute space-x-2 left-5 bottom-5 -translate-y-1/2 transform ">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                  <div class="absolute bg-black text-white rounded-lg py-5 px-8 bottom-10 right-10">
+                    <h1 class="text-xl font-bold pb-5">Meet all the heroes from the field</h1>
+                    <p>Dit amet consectetur. Condimentum dignissim adipiscing  aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                  </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img
+                      src="./Images/1.png"
+                      class="w-full" />
+                    <div class="absolute space-x-2 left-5 bottom-5 -translate-y-1/2 transform ">
+                      <a href="#slide1" class="btn btn-circle bg-blue-700 text-white">❮</a>
+                      <a href="#slide3" class="btn btn-circle bg-blue-700 text-white">❯</a>
+                    </div>
+                    <div class="absolute bg-blue-700 text-white rounded-lg py-5 px-8 bottom-10 right-10">
+                      <h1 class="text-xl font-bold pb-5">Meet all the heroes from the field</h1>
+                      <p>Dit amet consectetur. Condimentum dignissim adipiscing  aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                    </div>
+                  </div>
+                  <div id="slide3" class="carousel-item relative w-full">
+                    <img
+                      src="./Images/1.png"
+                      class="w-full" />
+                    <div class="absolute space-x-2 left-5 bottom-5 -translate-y-1/2 transform ">
+                      <a href="#slide2" class="btn btn-circle bg-green-700 text-white">❮</a>
+                      <a href="#slide4" class="btn btn-circle bg-green-700 text-white">❯</a>
+                    </div>
+                    <div class="absolute bg-green-700 text-white rounded-lg py-5 px-8 bottom-10 right-10">
+                      <h1 class="text-xl font-bold pb-5">Meet all the heroes from the field</h1>
+                      <p>Dit amet consectetur. Condimentum dignissim adipiscing  aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                    </div>
+                  </div>
+                  <div id="slide4" class="carousel-item relative w-full">
+                    <img
+                      src="./Images/1.png"
+                      class="w-full" />
+                    <div class="absolute space-x-2 left-5 bottom-5 -translate-y-1/2 transform ">
+                      <a href="#slide3" class="btn btn-circle bg-accent text-white">❮</a>
+                      <a href="#slide1" class="btn btn-circle bg-accent text-white">❯</a>
+                    </div>
+                    <div class="absolute bg-accent text-white rounded-lg py-5 px-8 bottom-10 right-10">
+                      <h1 class="text-xl font-bold pb-5">Meet all the heroes from the field</h1>
+                      <p>Dit amet consectetur. Condimentum dignissim adipiscing  aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                    </div>
+                  </div>
+              </div>
+         </div>
+     </header>
+     <!-- main  -->
+      <main>
+        <!-- loader section  -->
+        <section>
+            
+        </section>
+      </main>
+
+</body>
+
+</html>
